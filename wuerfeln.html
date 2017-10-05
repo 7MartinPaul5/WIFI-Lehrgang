@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+
+      $( document ).ready(function() {
+
+        $( '#btn' ).click(function() {
+
+          var wurf1, wurf2, wurf3, wurf4, wurf5, wurf6;
+          var spielfeld = $( '#spielfeld' );
+          wurf1 = $( '<img>' ).attr( 'src', 'wuerfel1cols5.jpg' ).appendTo( spielfeld );
+          wurf2 = $( '<img>' ).attr( 'src', 'wuerfel2cols5.jpg' ).appendTo( spielfeld );
+          wurf3 = $( '<img>' ).attr( 'src', 'wuerfel3cols5.jpg' ).appendTo( spielfeld );
+          wurf4 = $( '<img>' ).attr( 'src', 'wuerfel4cols5.jpg' ).appendTo( spielfeld );
+          wurf5 = $( '<img>' ).attr( 'src', 'wuerfel5cols5.jpg' ).appendTo( spielfeld );
+          wurf6 = $( '<img>' ).attr( 'src', 'wuerfel6cols5.jpg' ).appendTo( spielfeld );
+
+
+        });
+
+
+      });
+
+    </script>
+
+    <style>
+      #spielfeld {
+          border: 1px solid #000;
+          background: lightgrey;
+          *width: 600px;
+          height: 100px;
+        }
+      .geklickt {
+
+      }
+
+
+    </style>
+
+</head>
+
+<body>
+  <div id="spielfeld">
+  </div><br>
+  <button id="btn">Würfeln</button>
+
+</body>
+
+</html>
