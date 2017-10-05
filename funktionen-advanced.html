@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+    <script>
+
+    var tuwas = function( a ) {
+      return a*a;
+    }
+
+  var x = tuwas( 2 );
+
+  window.onload = function() {
+
+    // document.getElementById('btn').onclick = tuwas;
+    // wenn Klammern hinter Funtkion > sofort ausgeführt
+    // Evewntlistener übergibt an Funktion das Event-Objekt > automat.
+
+      var multiply = function(a,b) {
+          return a*b;
+      }
+
+      var i = 10;
+      var count = function() {
+        document.getElementById( 'countdown').innerHTML =  i ;
+        i--;
+        if (i>=0)
+        setTimeout( count, 1000 );
+      }
+      count();
+    }
+
+    // Methode ist wie Funktion, sitzt direkt beim Objekt
+
+    var p = {
+      a:5,
+      b:7
+    };
+
+    p.m = function() {
+      return this.a * this.b;
+    }
+    alert(p.m());
+
+    </script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+  <button id="button">Hier klicken</button>
+  <div id="countdown">
+
+  </div>
+
+</body>
+
+
+</html>
